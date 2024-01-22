@@ -95,8 +95,8 @@ jobs:
       - uses: actions/setup-java@v4
         if: ${{ env.commit }}
         with:
-          distribution: temurin
-          java-version: 11
+          distribution: oracle
+          java-version: 17
       - uses: gradle/gradle-build-action@v2
         if: ${{ env.commit }}
       - name: Build With Gradle
