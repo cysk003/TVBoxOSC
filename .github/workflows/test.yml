@@ -96,7 +96,7 @@ jobs:
         if: ${{ env.commit }}
         with:
           distribution: temurin
-          java-version: 17
+          java-version: 11
       - uses: gradle/gradle-build-action@v2
         if: ${{ env.commit }}
       - name: Build With Gradle
